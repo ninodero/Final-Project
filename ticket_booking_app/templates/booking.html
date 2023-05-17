@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Booking Page</h1>
+		<form method="POST" action="/book">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" name="name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="ticket_type">Ticket Type:</label>
+				<select name="ticket_type" class="form-control">
+					<option value="Standard">Standard</option>
+					<option value="VIP">VIP</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-primary">Book Ticket</button>
+		</form>
+	</div>
+</body>
+</html>
+
